@@ -267,7 +267,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
             input_file=input_,
             user_id=cb.from_user.id,
             message=cb.message,
-            format_=FormtDB.get(cb.from_user.id, "mkv")
+            format_=FormtDB.get(cb.from_user.id, "m4a")
         )
         if merged_vid_path is None:
             await cb.message.edit(
